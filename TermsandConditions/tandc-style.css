@@ -1,0 +1,129 @@
+body{
+    background-image: url(tandc-images/body-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin-top: 0.35in;
+    margin-bottom: 0;
+}
+.login-box{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 0 1000px 2px rgba(15, 15, 15, 0.65);
+    border:2px solid #171717;
+    border-radius: 3.65px;
+    margin:6.2% auto;
+    max-width: 40%;
+    padding: 34.5px 0 37.5px 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.main-box{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 0 1000px 2px rgba(15, 15, 15, 0.65);
+    border:2px solid #171717;
+    border-radius: 3.65px;
+    margin:0 auto;
+    max-width: 30%;
+    padding: 28.5px 0 35px 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+h1{
+    color: darkgrey;
+    padding-top: 5px;
+}
+form label{
+    font-size: 20px;
+    color: darkgrey;
+    text-shadow: 1px 0.5px ;
+}
+form input{
+    line-height: 1.5rem;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.formlogin-box input{
+    line-height: 1.5rem;
+    border-radius: 5px;
+}   
+.termsandconditions{
+    color: white;
+}
+#tandc{
+    cursor: pointer;
+}
+.termsandconditions a{
+    color: rgb(88, 69, 194);
+}
+.login-button{
+    text-align: center;
+    padding: 15px 0 20px 0;
+}
+.login-button button{
+    outline: 0.1rem solid grey;
+    font-size: 1.65rem;
+    background-color: darkgrey;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.createaccount-button{
+    text-align: center;
+}
+.createaccount-button button{   
+    outline: 0.1rem solid grey;
+    font-size: 1.15rem;
+    background-color: darkgrey;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+a{
+    font-size: 0.90rem;
+    color: lavender;
+}
+.trademark{
+    display: inherit;
+    color: white;
+    font-size: 0.9rem;
+    text-align: right;
+}
+@media screen and (max-width:940px) {
+.main-box, .login-box{
+    border-width: 0;
+    background-color: unset;
+    box-shadow: none;
+}
+}
+@media screen and (max-width:1000px) {
+#login-body{
+    background-size: 500%;
+}
+.login-header{
+    font-size: 1.9rem;
+}
+.create{
+    font-size: 1.85rem;
+}
+form label{
+    font-size: 1.45rem;
+}
+}
+#tandc-container{
+    background-image: url(tandc-images/tandcbody-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tandc-box{
+    margin: 0 auto;
+    max-width: 50%;
+    color: white;
+    font-size: 1.11rem;
+    border: 1px solid whitesmoke;
+    padding: 20px 25px;
+    border-radius: 2.5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.9);
+}

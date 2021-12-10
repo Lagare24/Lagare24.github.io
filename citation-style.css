@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(multimedias/cite-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cite-wrapper{
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg-form-css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="get" autocomplete="on">
+            <h1>Sign in</h1>
+            <!-- <fieldset><legend><b>Personal Info</b></legend> -->
+                <div class="first-name-box">
+                    <label for="first-name">First name</label>
+                    <input required type="text" name="first-name" id="first-name" placeholder="First name">
+                </div>
+                <div class="last-name-box">
+                    <label for="last-name">Last name</label>
+                    <input required type="text" name="last-name" id="last-name" placeholder="Last name">
+                </div>
+                <div class="age-box">
+                    <label for="age">Age</label>
+                    <input required type="number" name="age" id="age" min="17" max="99" value="17">
+                </div>
+                <div class="gender-box">
+                    <label>Gender</label>
+                    <input required type="radio" name="gender" id="male" value="male">
+                    <label class="except" for="male">Male</label>
+                    <input required type="radio" name="gender" id="female" value="female">
+                    <label class="except" for="female">Female</label>
+                    <input required type="radio" name="gender" id="others" value="Prefer not to say">
+                    <label class="except" for="others">Prefer not to say</label>
+                </div>
+                <div class="address-box">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+            </fieldset>
+            <!--<fieldset><legend><b>Educational Background</b></legend>
+                <table class="edu-bg-box">
+                    <tr class="table-header">
+                        <th>Education Level</th>
+                        <th>School</th>
+                        <th>Special Awards</th>
+                    </tr>
+                    <tr class="primary">
+                        <td>Primary</td>
+                        <td><input type="text" name="primary" id="primary"></td>
+                        <td><input type="text" name="primary-award" id="primary-award"></td>
+                    </tr>
+                    <tr class="secondary">
+                        <td>Secondary</td>
+                        <td><input type="text" name="secondary" id="secondary"></td>
+                        <td><input type="text" name="secondary-award" id="secondary-award"></td>
+                    </tr>
+                    <tr class="tertiary">
+                        <td>Tertiary</td>
+                        <td><input type="text" name="tertiary" id="tertiary"></td>
+                        <td><input type="text" name="teriary-award" id="tertiary-award"></td>
+                    </tr>
+                </table>
+            </fieldset> -->
+            <div class="buttons">
+                <button type="reset">Reset</button>
+                <button type="submit" onclick="saveForm()">Save</button>
+            </div>
+        </form>
+    </div>
+    <script src="reg-form-js.js"></script>
+</body>
+</html>

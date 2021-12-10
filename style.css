@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.container-box{
+    position: relative;
+    background: url(multimedias/index-bg.jpg) no-repeat center/cover;
+}
+.cebu-culture{
+    max-width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 73.5%;
+    background-attachment: fixed;
+    opacity: 1;
+    display: none;
+    backdrop-filter: blur(0.65em);
+    right: 1px;
+}
+#cebcul-button{
+    position: absolute;
+    right: 85%;
+}
+#ceb-cul{
+    width: 70%;
+}
+.ceCul:hover::after{
+    content: "Note* If video not showing please click again";
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 4.5em 2em 2em;
+    background-color: rgba(15, 15, 15, 0.5);
+}
+.text-header{
+    border: 0.1em none black;
+    padding: 0 1%;
+    transition: all 300ms linear 50ms;
+}
+.text-header:hover{
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 1em;
+    cursor: default;
+    letter-spacing: 0.7em;
+}
+.header-container h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    background-image: url(multimedias/text-bg.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+nav{
+    margin-top: 16px;
+}
+nav a{
+    word-wrap: normal;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 0 2em;
+    color: #FBFFFF;
+    transition: all 100ms ease-in-out 10ms;
+}
+nav a:nth-child(2):hover{
+    border-color: red;
+    color: red;
+    background-color: rgba(100, 0, 0, 0.1);
+    cursor: not-allowed;
+}
+nav a:hover{
+    outline: 0.1em solid;
+    text-shadow: 0.05em 0.05em rgba(0, 0, 255, 0.5);
+    padding: 1em 2em;
+    border-radius: 1px;
+    background-color: rgba(0, 0, 100, 0.1);
+}
+.menu{
+    display: inline-block;
+    position: relative;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+.dropdown-menu{
+    max-width: 100%;
+    position: absolute;
+    top: calc(100% + 1em);
+    display: block;
+    opacity: 0;
+    padding: 0;
+    transform: translateY(-0.25em);
+    transition: all 250ms ease-in-out 200ms;
+    pointer-events: none;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1em;
+}
+.menu:hover .dropdown-menu{
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.dropdown-menu ul{
+    padding: 0;
+}
+.dropdown-menu li{
+    border-bottom: 0.1em solid black;
+    padding: 1% 0;
+    list-style: none;
+}
+.dropdown-menu li:last-child{
+    border-bottom: unset;
+}
+.dropdown-menu a{
+    padding: 0 1em;
+    display: inline-block;
+    color: black;
+}
+.menu:hover .dropdown-menu{
+    padding: 0;
+    opacity: 1;
+}
+.dropdown-menu li:hover{
+    background-color: rgba(5, 5, 5, 0.6);
+}
+.dropdown-menu a:hover{
+    font-weight: bolder;
+    display: inline-block;
+    outline: none;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+.banner{
+    background: url(multimedias/bg-pic2.jpg) no-repeat center;
+    background-size: cover;
+    outline: 0.11em ridge #FBFFFF;
+    margin-bottom: 7.5%;
+}
+.banner h1{
+    padding: 5em;
+}
+.content-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 8.5%;
+    margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+.content-container h1{
+    font-weight: bolder;
+}
+.box1, .box2, .box3, .box4, .box5{
+    border: 0.5em solid;
+    border-radius: 20px;
+    border-color: #2C423F;
+    color: wheat;
+    flex: 1 1 20em;
+    overflow: hidden;
+    margin: 1%;
+    padding: 20em 0 0;
+}
+.description{
+    padding: 1%;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+button{
+    padding: 1% 1.5%;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: #FF0000;
+    transition: all 550ms linear 150ms;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+button:hover{
+    background-color:rgba(0, 0, 0, 1);
+    color: #FBFFFF;
+    font-weight: bolder;
+}
+.buttons{
+    text-align: center;
+}
+.box1{
+    background: url(multimedias/bantayan1.jpg) no-repeat center;
+    background-attachment: local;
+    background-size: cover;
+}
+.box1 .description{
+    transition: all 600ms ease-in-out 220ms;
+    opacity: 0;
+}
+.box1:hover .description{
+    opacity: 1;
+}
+.description-p{
+    overflow: hidden;
+    text-justify: distribute-all-lines;
+}
+.p2-box1{
+    display: none;
+}
+.box2{
+    background: url(multimedias/kawasan.jpg) no-repeat center;
+    background-attachment: local;
+    background-size: cover;
+}
+.box2 .description{
+    transition: all 400ms ease-in-out 200ms;
+    opacity: 0;
+}
+.box2:hover .description{
+    opacity: 1;
+}
+.box3{
+    background: url(multimedias/sirao-garden.jpg) no-repeat center;
+    background-attachment: local;
+    background-size: cover;
+}
+.box3 .description{
+    transition: all 400ms ease-in-out 40ms;
+    opacity: 0;
+}
+.box3:hover .description{
+    opacity: 1;
+}
+.p2-box3{
+    display: none;
+}
+.ref-link{
+    font-size: 0.7em;
+}
+.box4 a:hover, .box5 a:hover{
+    font-weight: bolder;
+}
+.box4{
+    background: url(multimedias/sample.jpeg) no-repeat center;
+    padding: 2.5em 0 0;
+    background-attachment: local;
+    background-size: cover;
+}
+.box4 .description{
+    transition: all 400ms ease-in-out 40ms;
+    opacity: 0;
+}
+.box4:hover .description{
+    opacity: 1;
+}
+.box5{
+    background: url(multimedias/sample.jpeg) no-repeat center;
+    padding: 2.5em 0 0;
+    background-attachment: local;
+    background-size: cover;
+}
+.box5 .description{
+    transition: all 400ms ease-in-out 40ms;
+    opacity: 0;
+}
+.box5:hover .description{
+    opacity: 1;
+}
+.p2-box5{
+    display: none;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 8.5% 5%;
+    padding: 3.5em 2.5em  2.5em;
+    box-shadow: 1.25em 1.5em 1em 0.1em rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(#000, #171717);   
+    justify-content: space-evenly;
+}
+.footer-container h1, h2{
+    color: #FBFFFF;
+}
+.section-1 a{
+    color: blue;
+    text-decoration: none;
+    margin-right: 5%;
+    transition: all 250ms ease-in-out 100ms;
+}
+.section-1 a:hover{
+    color: rgba(200, 150, 255, 0.9);
+    letter-spacing: 0.1px;
+}
+/* .section-1{
+
+} */
+.section-1 p{
+    color: wheat;
+}
+/* .section-2{
+
+} */
+.section-2 span{
+    color: yellow;
+}
+.section-3{
+    display: inline;
+}
+.section-3 textarea{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    resize: none;
+}
+.section-3 textarea::placeholder{
+    font-family: cursive;
+    font-size: 1em;
+}
+.response-button{
+    text-align: right;
+}
+.section-3 button{
+    color: #FBFFFF;
+    transition: color 200ms linear 100ms;
+    font-size: 1em;
+}
+.section-3 button:hover{
+    color: #0062FF;
+    font-size: 1em;
+}
+.line-break{
+    flex-basis: 100%;
+    padding-bottom: 1em;
+}
+.icons{
+    text-align: center;
+}
+.icons i{
+    letter-spacing: 0.1em;
+    font-size: 1.25em;
+    color: #FBFFFF;
+}
+.icons h2{
+    font-size: 1.5em;
+}
+@media screen and (min-width: 1920px) {
+    .box1, .box2, .box3, .box4, .box5{
+        border: 0.5em solid;
+        border-radius: 20px;
+        border-color: #2C423F;
+        color: wheat;
+        flex: 1 1 30em;
+        margin: 1%;
+        padding: 20em 0 0;
+    }
+    .box1, .box2, .box3{
+        padding: 25em 0 0;
+    }
+}
+@media screen and (min-width: 1392px) {
+    .box1, .box2, .box3, .box4, .box5{
+        border: 0.5em solid;
+        border-radius: 20px;
+        border-color: #2C423F;
+        color: wheat;
+        flex: 1 1 25em;
+        margin: 1%;
+        padding: 20em 0 0;
+    }
+}
+@media screen and (max-width: 1008px) {
+    .header-container{
+        padding: 0;
+        display: block;
+    }
+    .text-header{
+        text-align: center;
+    }
+    nav{
+        text-align: center;
+        padding-bottom: 2%;
+        border: 0.1em dotted black;
+    }
+    nav a{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    .container-box{width: 100%;
+
+    }
+    .banner{
+        display: none;
+    }
+    .header-container{
+        padding: 0;
+        display: block;
+    }
+    .text-header{
+        text-align: center;
+        padding: 1% 0;
+        transition: unset;
+    }
+    .text-header:hover{
+        background-color: initial;
+        border-radius: initial;
+        cursor: initial;
+        letter-spacing: initial;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        padding: 1.5em;
+        background-color: rgba(100, 100, 100, 0.1);
+        text-align: center;
+    }
+    nav a{
+        border: 0.1em inset;
+        padding: 2% 5%;
+    }
+    nav a:hover{
+        background-color: unset;
+        padding: 1%;
+    }
+    .menu{
+        display: initial;
+    }
+    .dropdown-menu{
+        position: absolute;
+        left: -50px;
+        top: calc(100% + 0.25em);
+        display: inline;
+        width: min-content;
+    }
+    .dropdown-menu a{
+        border: none;
+        padding: 0;
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        border: 0.5em solid;
+        border-radius: 20px;
+        border-color: #2C423F;
+        color: wheat;
+        flex: 1 1 25em;
+        margin: 1%;
+        padding: 1em 0 0;
+    }
+    .others{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .section-1 h1{
+        text-align: center;
+        padding-bottom: 1%;
+    }
+    .section-2{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    body{
+        width: 100%;
+    }
+    .container-box{width: 100%;
+
+    }
+    .banner{
+        display: none;
+    }
+    .header-container{
+        padding: 0;
+        display: block;
+    }
+    .text-header{
+        transition: unset;
+    }
+    .text-header:hover{
+        background-color: initial;
+        border-radius: initial;
+        cursor: initial;
+        letter-spacing: initial;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        padding: 1.5em;
+        background-color: rgba(100, 100, 100, 0.1);
+        text-align: center;
+    }
+    nav a{
+        border: 0.1em inset;
+        padding: 2% 5%;
+    }
+    nav a:hover{
+        background-color: unset;
+        padding: 1%;
+    }
+    .menu{
+        display: initial;
+    }
+    .dropdown-menu{
+        position: absolute;
+        left: -50px;
+        top: calc(100% + 0.25em);
+        display: inline;
+        width: min-content;
+    }
+    .dropdown-menu a{
+        border: none;
+        padding: 0;
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        padding: 1em 0;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        width: 100%;
+    }
+    .container-box{width: 100%;
+
+    }
+    .banner{
+        display: none;
+    }
+    .header-container{
+        padding: 0;
+        display: block;
+    }
+    .text-header{
+        transition: unset;
+    }
+    .text-header:hover{
+        background-color: initial;
+        border-radius: initial;
+        cursor: initial;
+        letter-spacing: initial;
+    }
+    nav{
+        text-align: initial;
+        display: block;
+        width: 100%;
+        padding: 1em;
+        background-color: rgba(100, 100, 100, 0.1);
+    }
+    nav a{
+        border: 0.1em inset;
+        padding: 1%;
+    }
+    nav a:hover{
+        background-color: unset;
+        padding: 1%;
+    }
+    .menu{
+        display: initial;
+    }
+    .dropdown-menu{
+        position: absolute;
+        left: -50px;
+        top: calc(100% + 0.25em);
+        display: inline;
+        width: min-content;
+    }
+    .dropdown-menu a{
+        border: none;
+        padding: 0;
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        padding: 1em 0;
+    }
+    .others{
+        text-align: center;
+    }
+    .others a:nth-child(1)::before{
+        content: "--------";
+    }
+    .others a:nth-child(1)::after{
+        content: "--------";
+    }
+    textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .others a:nth-child(1)::before{
+        content: "------";
+    }
+    .others a:nth-child(1)::after{
+        content: "------";
+    }
+}
